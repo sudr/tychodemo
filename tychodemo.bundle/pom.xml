@@ -8,6 +8,15 @@
     <tycho-version>0.14.1</tycho-version>
   </properties>
   
+  <repositories>
+    <!-- configure p2 repository to resolve against -->
+    <repository>
+      <id>juno</id>
+      <layout>p2</layout>
+      <url>http://download.eclipse.org/releases/juno/</url>
+    </repository>
+  </repositories>
+  
   <build>
     <plugins>
       <plugin>
