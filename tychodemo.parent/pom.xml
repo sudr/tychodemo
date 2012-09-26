@@ -10,6 +10,7 @@
 	<!-- the modules that should be built together -->
 	<modules>
 		<module>../tychodemo.bundle</module>
+		<module>../tychodemo.bundle.tests</module>
 	</modules>
 
 	<!-- common settings for all modules -->
