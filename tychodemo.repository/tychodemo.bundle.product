@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="tychodemo.bundle" id="tychodemo.bundle.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
+<product name="tychodemo.bundle" uid="tychodemo.product" id="tychodemo.bundle.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -13,7 +13,6 @@
    <windowImages/>
 
    <plugins>
-      <plugin id="tychodemo.bundle"/>
       <plugin id="com.ibm.icu"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
@@ -99,7 +98,21 @@
       <plugin id="org.w3c.css.sac"/>
       <plugin id="org.w3c.dom.smil"/>
       <plugin id="org.w3c.dom.svg"/>
+      <plugin id="tychodemo.bundle"/>
    </plugins>
 
+   <features>
+      <feature id="tychodemo.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.e4.rcp" version="1.1.0.v20120521-2329-8yFTIGF3GGduEYqkQB9M3DKn"/>
+      <feature id="org.eclipse.rcp" version="4.2.0.v20120528-1648-7IAPA7BrHQicRpNdOz-Obz-rlRCA"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.emf.common"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+   </configurations>
 
 </product>
